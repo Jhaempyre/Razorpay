@@ -6,11 +6,11 @@ import axios from "axios";
 const Home = () => {
 
     const checkoutHandler = async (amount) =>{
-        const { data: { order } } = await axios.post("http://localhost:8000/api/checkout", {
+        const { data: { order } } = await axios.post("https://razorpay-5lle.onrender.com/api/checkout", {
             amount
         })
 
-        const {data :{key}} =await axios.get("http://localhost:8000/api/getkey")
+        const {data :{key}} =await axios.get("https://razorpay-5lle.onrender.com/api/getkey")
 
     
 
@@ -25,7 +25,7 @@ const Home = () => {
             description: "Billing to products",
             image: "https://avatars.githubusercontent.com/u/114846931?v=4",
             order_id: order.id,
-            callback_url: "http://localhost:8000/api/paymentVerification",
+            callback_url: "https://razorpay-5lle.onrender.com/api/paymentVerification",
             prefill: {
                 name: "Aashish Kumar Jha",
                 email: "jhaashish.ajha@gmail.com",
