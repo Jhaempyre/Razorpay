@@ -13,7 +13,7 @@ const PaymentSuccess = () => {
                 <Heading textTransform={"uppercase"}> Order Successfull</Heading>
 
                 <Text>
-                I m your's 😂😂😂    Reference No.{referenceNum}
+                I m your's 😂😂😂  Reference No.{referenceNum}
                 </Text>
 
             </VStack>
