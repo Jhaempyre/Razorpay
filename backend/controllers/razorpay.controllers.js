@@ -43,7 +43,7 @@ export const paymentVerification = async (req, res) => {
             razorpay_signature,
           });
           res.redirect(
-            `http://localhost:5173/paymentsuccess?reference=${razorpay_payment_id}`
+            `https://razorpay-phi-nine.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`
           );
       
         } else {
